@@ -11,19 +11,48 @@
 
   <title>Frontend Mentor | Article preview component</title>  
 </head>
-<body>
+<body class="bg-[var(--Light-Grayish-Blue)]">
+  <main class="flex items-center justify-center w-screen h-screen">
+    <div class="flex flex-col lg:flex-row max-w-xs lg:w-full lg:max-w-3xl m-5 rounded-xl bg-white">
+      
+      <div class="w-full h-52 lg:h-auto bg-[url('./images/drawers.jpg')] bg-cover bg-no-repeat rounded-t-lg lg:rounded-bl-lg lg:rounded-tr-none"></div>  
+      
+      <div class="lg:max-w-2xl">
+        <div class="flex flex-col p-7 lg:p-8 text-left">
+          <p class="font-bold text-[var(--Very-Dark-Grayish-Blue)] mb-2">Shift the overall look and feel by adding these wonderful touches to furniture in your home</p>
+          <p class="font-medium text-[var(--Desaturated-Dark-Blue)]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>      
+        </div>
+  
+        <!-- Profile -->
+        <div class="flex flex-row items-center justify-between px-7 py-3 rounded-b-lg lg:rounded-bl-none" id="personContent">
+          <div class="flex flex-row items-center justify-center">
+            <img class="w-10 h-10 rounded-full mr-5" src="./images/avatar-michelle.jpg" alt="">
+            <div class="flex flex-col">
+              <strong class="´font-bold text-[var(--Very-Dark-Gravish-Blue)]">Michelle Appleton</strong>
+              <span class="font-medium text-[var(--Desaturated-Dark-Blue)]">28 Jun 2020</span>
+            </div>
+          </div>
+          
+          <div class="rounded-full bg-[var(--Light-Grayish-Blue)] p-4 lg:cursor-pointer hover:bg-[var(--Very-Dark-Grayish-Blue)] bg-[url('./images/icon-share.svg')] bg-no-repeat bg-center hover:bg-[url('./images/icon-share-light.svg')]" id="btnShareShow"></div>          
+        </div>
+        
+        <!-- Share -->
+        <div class="hidden flex-row items-center justify-between px-7 py-5 bg-[var(--Very-Dark-Grayish-Blue)] rounded-b-lg lg:rounded-bl-none" id="shareContent">
+          <div class="flex flex-row items-center justify-center">
+            <span class="pr-2 text-sm tracking-[.30em] font-medium text-[var(--Grayish-Blue)]">SHARE</span>
+            <a href="https://facebook.com" target="_blank"><img class="px-2" src="./images/icon-facebook.svg" alt="Logotipo do facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img class="px-2" src="./images/icon-twitter.svg" alt="Logotipo do twitter"></a>
+            <a href="https://pinterest.com" target="_blank"><img class="px-2" src="./images/icon-pinterest.svg" alt="Logotipo do pinterest"></a>
+          </div>
+          
+          <div class="rounded-full bg-[var(--Desaturated-Dark-Blue)] p-[0.6em]" id="btnShareClose">
+            <img src="./images/icon-share-light.svg" alt="Imagem de uma seta">
+          </div>                    
+        </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-   
+      </div>
+    </div>
+  </main>
+   <script src="./js/index.js"></script>
 </body>
 </html>
