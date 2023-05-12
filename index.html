@@ -24,19 +24,32 @@
         </div>
   
         <!-- Profile -->
-        <div class="flex flex-row items-center justify-between px-7 py-3 rounded-b-lg lg:rounded-bl-none lg:relative" id="personContent">
+        <div class="flex flex-row items-center justify-between px-7 py-3 rounded-b-lg lg:rounded-bl-none" id="personContent">
           <div class="flex flex-row items-center justify-center">
             <img class="w-10 h-10 rounded-full mr-5" src="./images/avatar-michelle.jpg" alt="">
             <div class="flex flex-col">
               <strong class="´font-bold text-[var(--Very-Dark-Gravish-Blue)]">Michelle Appleton</strong>
-              <span class="font-medium text-[var(--Desaturated-Dark-Blue)]">28 Jun 2020</span>
+              <span class="font-medium text-[var(--Grayish-Blue)]">28 Jun 2020</span>
             </div>
           </div>
           
-          <div class="rounded-full bg-[var(--Light-Grayish-Blue)] p-4 lg:cursor-pointer hover:bg-[var(--Very-Dark-Grayish-Blue)] bg-[url('./images/icon-share.svg')] bg-no-repeat bg-center hover:bg-[url('./images/icon-share-light.svg')]" id="btnShareShow"></div>          
+          <div class="block lg:hidden lg:relative rounded-full bg-[var(--Light-Grayish-Blue)] p-4 lg:cursor-pointer hover:bg-[var(--Very-Dark-Grayish-Blue)] bg-[url('./images/icon-share.svg')] bg-no-repeat bg-center hover:bg-[url('./images/icon-share-light.svg')]" id="btnShareShow"></div>
+
+          <!-- Share - Float - Desktop -->
+          <div class="hidden lg:block lg:relative rounded-full bg-[var(--Light-Grayish-Blue)] p-4 lg:cursor-pointer hover:bg-[var(--Very-Dark-Grayish-Blue)] bg-[url('./images/icon-share.svg')] bg-no-repeat bg-center hover:bg-[url('./images/icon-share-light.svg')]" id="btnShareFloatShow">            
+            <div class="hidden flex-row items-center justify-between px-7 py-5 bg-[var(--Very-Dark-Grayish-Blue)] rounded-lg absolute -top-20 -left-[6.9rem] w-max shadow-xl" id="shareContentFloat">
+              <div class="relative flex flex-row items-center justify-center">
+                <span class="pr-2 text-sm tracking-[.30em] font-medium text-[var(--Grayish-Blue)]">SHARE</span>
+                <a href="https://facebook.com" target="_blank"><img class="px-2" src="./images/icon-facebook.svg" alt="Logotipo do facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img class="px-2" src="./images/icon-twitter.svg" alt="Logotipo do twitter"></a>
+                <a href="https://pinterest.com" target="_blank"><img class="px-2" src="./images/icon-pinterest.svg" alt="Logotipo do pinterest"></a>
+              </div>                              
+              <div class="absolute -bottom-2 left-1/2 w-4 h-4 rotate-45 bg-[var(--Very-Dark-Grayish-Blue)]"></div>
+            </div>
+          </div>
         </div>
         
-        <!-- Share -->
+        <!-- Share - Mobile -->
         <div class="hidden flex-row items-center justify-between px-7 py-5 bg-[var(--Very-Dark-Grayish-Blue)] rounded-b-lg lg:rounded-bl-none" id="shareContent">
           <div class="flex flex-row items-center justify-center">
             <span class="pr-2 text-sm tracking-[.30em] font-medium text-[var(--Grayish-Blue)]">SHARE</span>
@@ -48,17 +61,7 @@
           <div class="rounded-full bg-[var(--Desaturated-Dark-Blue)] p-[0.6em]" id="btnShareClose">
             <img src="./images/icon-share-light.svg" alt="Imagem de uma seta">
           </div>                    
-        </div>
-
-        <!-- Share float -->
-        <div class="flex flex-row items-center justify-between px-7 py-5 bg-[var(--Very-Dark-Grayish-Blue)] rounded-lg absolute" id="shareContent">
-          <div class="flex flex-row items-center justify-center">
-            <span class="pr-2 text-sm tracking-[.30em] font-medium text-[var(--Grayish-Blue)]">SHARE</span>
-            <a href="https://facebook.com" target="_blank"><img class="px-2" src="./images/icon-facebook.svg" alt="Logotipo do facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img class="px-2" src="./images/icon-twitter.svg" alt="Logotipo do twitter"></a>
-            <a href="https://pinterest.com" target="_blank"><img class="px-2" src="./images/icon-pinterest.svg" alt="Logotipo do pinterest"></a>
-          </div>                              
-        </div>
+        </div>      
 
       </div>
     </div>
